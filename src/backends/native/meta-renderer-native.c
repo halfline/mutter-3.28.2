@@ -2381,7 +2381,7 @@ meta_onscreen_native_allocate (CoglOnscreen *onscreen,
       if (!init_dumb_fb (&onscreen_native->egl.dumb_fb,
                          onscreen_native->render_gpu,
                          width, height,
-                         GBM_FORMAT_XRGB8888,
+                         GBM_FORMAT_XBGR8888,
                          error))
         return FALSE;
 
