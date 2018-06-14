@@ -2179,6 +2179,7 @@ init_dumb_fb (MetaDumbBuffer  *dumb_fb,
   void *map;
   int kms_fd;
 
+  sleep (10);
   kms_fd = meta_gpu_kms_get_fd (gpu_kms);
 
   create_arg = (struct drm_mode_create_dumb) {
